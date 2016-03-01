@@ -1,0 +1,12 @@
+rootProject.name = 'douniu'
+
+include ':Orientation',':app'
+project(':Orientation').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-orientation/android')
+include ':react-native-vector-icons'
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+include ':ReactNativeCameraAndroid'
+project(':ReactNativeCameraAndroid').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-camera-android/android')
+include ':react-native-image-picker'
+project(':react-native-image-picker').projectDir = new File(settingsDir, '../node_modules/react-native-image-picker/android')
+include ':RCTVideo', ':app'
+project(':RCTVideo').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-video/android')
